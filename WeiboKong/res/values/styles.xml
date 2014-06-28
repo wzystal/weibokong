@@ -1,0 +1,105 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- account设置 -->
+    <style name="list_account_screen_name">
+        <item name="android:textSize">@dimen/list_account_screen_name</item>
+        <item name="android:textColor">@color/content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="list_footer_text">
+        <item name="android:textSize">@dimen/list_footer_text</item>
+        <item name="android:textColor">@color/content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="list_status_screen_name">
+        <item name="android:textSize">@dimen/list_status_screen_name</item>
+        <item name="android:textColor">@color/highlight</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="list_status_time_read">
+        <item name="android:textSize">@dimen/list_status_time</item>
+        <item name="android:textColor">@color/emphasize</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="list_status_text">
+        <item name="android:textSize">@dimen/list_status_text</item>
+        <item name="android:textColor">@color/content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textColorLink">@drawable/selector_text_link</item>
+    </style>
+
+    <style name="list_status_retweet">
+        <item name="android:textSize">@dimen/list_status_retweet</item>
+        <item name="android:textColor">@color/quote</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textColorLink">@drawable/selector_text_link</item>
+    </style>
+
+    <style name="list_status_source">
+        <item name="android:textSize">@dimen/list_status_source</item>
+        <item name="android:textColor">@color/quote</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColorLink">@drawable/selector_text_link</item>
+    </style>
+
+    <style name="list_status_response">
+        <item name="android:textSize">@dimen/list_status_response</item>
+        <item name="android:textColor">@color/emphasize</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="header_profile_screen_name">
+        <item name="android:textSize">@dimen/profile_screen_name</item>
+        <item name="android:textColor">@color/highlight</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="header_profile_impress">
+        <item name="android:textSize">@dimen/profile_impress</item>
+        <item name="android:textColor">@color/content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="status_text">
+        <item name="android:textSize">@dimen/status_text</item>
+        <item name="android:textColor">@color/content</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textColorLink">@drawable/selector_text_link</item>
+        <item name="android:textColorHighlight">@color/link_bg</item>
+    </style>
+
+</resources>

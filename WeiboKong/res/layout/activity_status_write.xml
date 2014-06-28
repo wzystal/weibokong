@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:background="@drawable/bg_actionbar_blue"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="@drawable/btn_back_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="发微博"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_text_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_status_content"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_frame_normal"
+            android:gravity="top"
+            android:hint="想说点什么呢？"
+            android:minLines="12"
+            android:paddingBottom="4sp"
+            android:paddingTop="4sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_status_send" />
+
+            <TextView
+                android:id="@+id/btn_status_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="20dp"
+                android:text="发送"
+                android:textColor="#BDBDBD"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+    
+    <include android:id="@+id/pb_loading" layout="@layout/progress_bar_loading"/>
+    
+	 <com.wzystal.weibokong.widget.XListView
+        android:id="@+id/xlv_home_statuses"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/line_seperator"
+        android:fastScrollEnabled="true"
+        android:listSelector="@drawable/selector_list_item"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true" />
+    
+</LinearLayout>

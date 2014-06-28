@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height"
+    android:background="@drawable/bg_actionbar_blue" >
+
+    <ImageButton
+        android:id="@+id/btn_home_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+   		android:layout_marginTop="2dp"
+        android:background="@drawable/btn_home_menu_normal" />
+
+    <TextView
+        android:id="@+id/tv_home_nick_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp" 
+        android:textColor="#fff"/>
+
+    <ImageButton
+        android:id="@+id/btn_status_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/btn_weibo_write_normal" />
+
+</FrameLayout>

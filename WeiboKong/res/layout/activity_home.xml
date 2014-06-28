@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f0f4f7">
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height"
+        layout="@layout/home_header" />
+    
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottombar_height"
+        layout="@layout/home_footer" />
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@drawable/bg_actionbar_blue"
+        android:gravity="center"
+        android:text="@string/label_accounts_manage"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/lvAccounts"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8sp"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/white"
+        android:footerDividersEnabled="true"
+        android:padding="0sp"
+        android:scrollbars="none" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/llAddAccountFrame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_frame_normal"
+        android:padding="1sp" 
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:id="@+id/llAddAccount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_frame_item_all_corner"
+            android:orientation="horizontal"
+            android:padding="8sp" >
+
+            <ImageView
+                android:id="@+id/ivAddAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp" 
+                android:src="@drawable/btn_account_add_normal" />
+
+            <TextView
+                android:id="@+id/tvAddAccount"
+                style="@style/list_account_screen_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/label_accounts_add" />
+
+            <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/icon_more_detail" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

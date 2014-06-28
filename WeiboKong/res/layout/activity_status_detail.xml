@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/include_status_publisher" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="0sp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_status_text"
+                style="@style/list_status_text"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/bg_frame_normal"
+                android:hint="@string/label_loading"
+                android:linksClickable="false" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/niv_thumb_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_status_detail_retweet"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="6sp"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="10sp"
+                android:background="@drawable/bg_retweet_frame"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_status_detail_retweet_text"
+                    style="@style/list_status_retweet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_loading"
+                    android:linksClickable="false" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/niv__status_detail_retweet_thumbpic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_attachment"
+                    android:maxHeight="120dp"
+                    android:maxWidth="120dp"
+                    android:minHeight="60dp"
+                    android:minWidth="60dp"
+                    android:scaleType="centerInside"
+                    android:visibility="gone" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/tv_source"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:hint="@string/label_loading"
+                    android:singleLine="true"
+                    android:textAppearance="@style/list_status_source" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_repost"
+                    style="@style/list_status_response"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:hint="@string/label_loading" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_comment"
+                    style="@style/list_status_response"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:hint="@string/label_loading" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/include_status_toolbar" />
+
+</LinearLayout>

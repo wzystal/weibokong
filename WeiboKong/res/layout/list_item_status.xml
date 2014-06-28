@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_status"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="8sp"
+    android:paddingLeft="8sp"
+    android:paddingTop="8sp" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/niv_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="6sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="10sp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_nick_name"
+                style="@style/list_status_screen_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:freezesText="true" />
+
+            <TextView
+                android:id="@+id/tv_created_at"
+                style="@style/list_status_time_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_loading" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="2sp" >
+
+            <TextView
+                android:id="@+id/tv_status_text"
+                style="@style/list_status_text"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/label_loading"
+                android:linksClickable="false" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/niv_thumb_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/shape_attachment"
+                android:maxHeight="120dp"
+                android:maxWidth="120dp"
+                android:minHeight="60dp"
+                android:minWidth="60dp"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_retweet_status"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="6sp"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="10sp"
+                android:background="@drawable/bg_retweet_frame"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_retweet_text"
+                    style="@style/list_status_retweet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/label_loading"
+                    android:linksClickable="false" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/niv_retweet_thumbpic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_attachment"
+                    android:maxHeight="120dp"
+                    android:maxWidth="120dp"
+                    android:minHeight="60dp"
+                    android:minWidth="60dp"
+                    android:scaleType="centerInside"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="2sp" >
+
+                <TextView
+                    android:id="@+id/tv_source"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:hint="@string/label_loading"
+                    android:textAppearance="@style/list_status_source" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_repost"
+                    style="@style/list_status_response"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:hint="@string/label_loading" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_comment"
+                    style="@style/list_status_response"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:hint="@string/label_loading" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

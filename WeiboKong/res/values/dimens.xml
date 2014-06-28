@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="actionbar_height">45dp</dimen>
+    <dimen name="bottombar_height">45dp</dimen>
+    <dimen name="toolbar_height">45dp</dimen>
+    <dimen name="list_account_screen_name">18sp</dimen>
+    <dimen name="list_footer_text">18sp</dimen>
+    <dimen name="list_status_screen_name">18sp</dimen>
+    <dimen name="list_status_time">14sp</dimen>
+    <dimen name="list_status_text">16sp</dimen>
+    <dimen name="list_status_retweet">16sp</dimen>
+    <dimen name="list_status_source">14sp</dimen>
+    <dimen name="list_status_response">14sp</dimen>
+    <dimen name="profile_screen_name">18sp</dimen>
+    <dimen name="profile_impress">14sp</dimen>
+    <dimen name="status_text">17sp</dimen>
+
+</resources>
